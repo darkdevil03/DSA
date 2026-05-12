@@ -1,3 +1,5 @@
+package ExamPattern;
+
 import java.util.Scanner;
 
 public class Pattern {
