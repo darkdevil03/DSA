@@ -1,3 +1,5 @@
+package ExamPattern;
+
 import java.util.Scanner;
 
 public class ClassObj1 {
@@ -52,7 +54,7 @@ class MedRecord{
     private String name;
     private String formula;
     private double price;
-//    MedRecord(int id,String name,String formula,double price){
+//    ExamPattern.MedRecord(int id,String name,String formula,double price){
 //        this.id=id;
 //        this.name=name;
 //        this.formula=formula;

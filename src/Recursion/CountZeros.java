@@ -1,4 +1,4 @@
-package recursion;
+package Recursion;
 
 public class CountZeros {
     static int count(int num){
