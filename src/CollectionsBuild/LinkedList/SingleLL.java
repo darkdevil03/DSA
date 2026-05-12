@@ -5,7 +5,7 @@ class Node{
     Node next;
     public Node(int val){
         this.val=val;
-        //System.out.println(this.val+" : "+this.next); // Checks
+        //System.out.println(this.val+" : "+this.next); // Checkk
     }
 }
 
