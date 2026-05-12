@@ -4,7 +4,7 @@ class Node{
     int val;
     Node next;
     public Node(int val){
-        this.val=val;
+        this.val=val; //s
         //System.out.println(this.val+" : "+this.next); // Checkk
     }
 }
