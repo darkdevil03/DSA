@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Search;
 
 import java.util.Arrays;
 import java.util.Scanner;

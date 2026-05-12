@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Maths;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class FibonacciNumber {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number for fibonacci number : ");
+        System.out.print("Enter nth for fibonacci number : ");
         int num = sc.nextInt();
         if(num<0){
             System.out.println("Invalid Input!!");
@@ -22,5 +22,6 @@ public class FibonacciNumber {
             System.out.print("Result : "+fibonacci(num));
         }
 
+        sc.close();
     }
 }

@@ -1,8 +1,8 @@
-package Recursion;
+package Recursion.Base;
 
 import java.util.Scanner;
 
-public class ReverseString {
+public class reverseString {
 
     static String reverseString(String str, int len){
         if(len==0){
