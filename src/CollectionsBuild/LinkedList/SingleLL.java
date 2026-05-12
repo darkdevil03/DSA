@@ -3,7 +3,7 @@ package CollectionsBuild.LinkedList;
 class Node{
     int val;
     Node next;
-    public Node(int val){
+    public Node(int val){ // node
         this.val=val; //
         //System.out.println(this.val+" : "+this.next); // Checks
     }
