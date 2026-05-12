@@ -8,9 +8,7 @@ public class BinarySearch {
     static int binarySearch(int []arr,int target,int low,int high)
     {
 
-        //int mid = low+(high-low)/2;
-        int mid = (low+high)/2;
-        //System.out.println(mid);
+        int mid = low+((high-low)/2);
 
         if(target==arr[mid]){
             return mid+1;
