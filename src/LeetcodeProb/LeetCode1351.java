@@ -18,7 +18,7 @@ public class LeetCode1351 {
 
     // Approach 1:
 
-    static int countNegatives(int[][] grid) {
+    static int countNegativesApproch1(int[][] grid) {
 
         int row = 0;
         int rowLen = grid.length;
@@ -56,9 +56,39 @@ public class LeetCode1351 {
         return count;
     }
 
+    // Approach 2:
+
+    static int countNegativesApproch2(int[][] grid) {
+        int row = 0;
+        int col = 0;
+        int count=0;
+        int pos = 0;
+
+        int rowLen = grid.length-1;
+        int colLen = grid[0].length;
+
+        while(rowLen >= 0 && col < colLen ){
+
+            if(grid[rowLen][col] < 0){
+                count += (colLen - pos);
+                rowLen--;
+                col = 0;
+                pos = 0;
+            }else{
+                pos++;
+                col++;
+            }
+
+        }
+
+        return count;
+    }
+
     public static void main(String[] args) {
         int[][] grid = {{4,3,2,-1},{3,2,1,-1},{1,1,-1,-2},{-1,-1,-2,-3}};
-        System.out.println(countNegatives(grid));
+        //System.out.println(countNegativesApproach1(grid));
+
+        System.out.println(countNegativesApproch2(grid));
     }
 
 }
