@@ -20,7 +20,18 @@ As per leetcode complier and given Constraints: both run in 0ms
 
       Disadvantages:Performance Unpredictability: It fails the O(log n) requirement usually requested in interviews for this specific problem because of the linear "walk."
 
+    Approach 2: Pure Binary Search
 
+            Logic: Run Binary Search twice. Once to find the leftmost boundary, and once to find the rightmost boundary.
+
+            Time Complexity: * All Cases: O(log n). Whether the target appears once or a million times, you are always halving the search space.
+
+            Space Complexity: O(1). No extra arrays or recursion are used.
+
+        Advantages: Guaranteed Performance: It satisfies the O(log n) constraint perfectly.
+                   It is the "Gold Standard" for this problem. Reliability: Large datasets do not slow this down.
+
+        Disadvantages: Slightly more complex: Requires writing a helper function or repeating the binary search logic with a small modification.
 
 */
 
@@ -29,7 +40,7 @@ import java.util.Arrays;
 public class LeetCode31 {
 
     // Approach 1:
-    static int[] searchRange(int[] nums, int target) {
+    static int[] searchRangeApproach1(int[] nums, int target) {
         int low=0;
         int high=nums.length-1;
 
@@ -71,12 +82,62 @@ public class LeetCode31 {
 
     }
 
+
+    // Approach 2:
+    static int numSearch(int[] nums, int target, boolean isFirstSearch){
+
+        int low = 0;
+        int high = nums.length-1;
+        int bound=-1;
+
+        while(low<=high){
+
+            int mid = low + ((high-low)/2);
+
+            if(target==nums[mid]){
+
+                bound=mid;
+
+                // Expand left to find the first occurrence
+                if (isFirstSearch){
+                    high=mid-1;
+
+                }
+                // Expand right to find the last occurrence
+                else{
+                    low=mid+1;
+                }
+            } else if(target > nums[mid]){
+                low=mid+1;
+            } else {
+                high=mid-1;
+            }
+        }
+
+        return bound;
+    }
+
+    static int[] searchRangeApproach2(int[] nums, int target) {
+
+        int[] result = {-1, -1};
+
+        result[0] = numSearch(nums, target, true);
+
+        if (result[0] != -1) {
+            result[1] = numSearch(nums, target, false);
+        }
+
+        return result;
+    }
+
     // main for input checks
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 3, 3, 3, 10, 12};
         int target = 3;
 
-        System.out.println(Arrays.toString(searchRange(nums, target)));
+        System.out.println(Arrays.toString(searchRangeApproach1(nums, target)));
+
+        System.out.println(Arrays.toString(searchRangeApproach2(nums, target)));
 
     }
 }
