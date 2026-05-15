@@ -4,11 +4,16 @@ package LeetcodeProb;
 Daily Question
     LeetCode2784 : https://leetcode.com/problems/check-if-array-is-good?envType=daily-question&envId=2026-05-14
 
+
+   |---------------------------------------------------------------------|
    |     Approaches   |       1         |       2       |        3       |
    |---------------------------------------------------------------------|
    | Time Complexity  |     O(N)        |     O(N+K)    |     O(NLogN)   |
    |---------------------------------------------------------------------|
-   | Space Complexity |     O(1)        |      O(1)     |     O(LogN)    |
+   | Space Complexity |     O(1)        |      O(N)     |     O(LogN)    |
+   |---------------------------------------------------------------------|
+   | Run Time         |     1ms         |      0ms      |      5ms       |
+   |---------------------------------------------------------------------|
 */
 
 import java.util.Arrays;
@@ -59,7 +64,7 @@ public class LeetCode2784 {
                 if (len < 2)
                     return false;
 
-                int[] track = new int[201];   // O(1) is because of independent from the input array
+                int[] track = new int[len];
 
                 for (int i = 0; i < len; i++) {             // O(N)
                     if (nums[i] > base) {
