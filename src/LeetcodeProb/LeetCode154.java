@@ -32,7 +32,8 @@ public class LeetCode154 {
 
     public static void main(String[] args) {
 
-        int[] nums = {3,4,5,1,2};
+        int[] nums = {3,3,3,1,3,3,3,3,3,3};
+
         System.out.println(findMin(nums));
     }
 
