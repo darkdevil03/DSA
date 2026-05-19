@@ -1,4 +1,4 @@
-package LeetcodeProb;
+package LeetcodeProb.BinarySearch;
 
 /*
     https://leetcode.com/problems/find-smallest-letter-greater-than-target?envType=study-plan-v2&envId=binary-search

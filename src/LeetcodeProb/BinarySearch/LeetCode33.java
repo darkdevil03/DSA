@@ -1,4 +1,4 @@
-package LeetcodeProb;
+package LeetcodeProb.BinarySearch;
 
 /*
     https://leetcode.com/problems/search-in-rotated-sorted-array?envType=study-plan-v2&envId=binary-search

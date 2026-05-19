@@ -1,4 +1,4 @@
-package LeetcodeProb;
+package LeetcodeProb.PureStringMethodUtilizationPattern;
 
 /*
 Daily Question

@@ -1,4 +1,4 @@
-package LeetcodeProb;
+package LeetcodeProb.BinarySearch;
 /*
     Leetcode 704: https://leetcode.com/problems/binary-search?envType=study-plan-v2&envId=binary-search
 */

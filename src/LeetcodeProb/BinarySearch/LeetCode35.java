@@ -1,4 +1,4 @@
-package LeetcodeProb;
+package LeetcodeProb.BinarySearch;
 
 /*
   LeetCode 35:  https://leetcode.com/problems/search-insert-position?envType=study-plan-v2&envId=binary-search

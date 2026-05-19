@@ -1,4 +1,4 @@
-package LeetcodeProb;
+package LeetcodeProb.BinarySearch;
 
 /*
     https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix?envType=study-plan-v2&envId=binary-search

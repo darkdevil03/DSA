@@ -1,4 +1,4 @@
-package LeetcodeProb;
+package LeetcodeProb.BinarySearch;
 
 /*
     https://leetcode.com/problems/find-minimum-in-rotated-sorted-array?envType=daily-question&envId=2026-05-15
