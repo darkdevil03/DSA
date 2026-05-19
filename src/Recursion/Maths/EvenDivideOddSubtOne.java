@@ -1,4 +1,4 @@
-package LeetcodeProb;
+package Recursion.Maths;
 
 public class EvenDivideOddSubtOne {
 
