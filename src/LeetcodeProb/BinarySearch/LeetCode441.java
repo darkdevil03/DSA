@@ -51,7 +51,6 @@ package LeetcodeProb.BinarySearch;
             Since 10 is greater than 8, we don't have enough coins to complete 4 rows. Therefore, the maximum number of complete rows is 3.
 
             So, the guessing will be done by binary search middle value evaluation.
-
 */
 
 public class LeetCode441 {
@@ -78,7 +77,7 @@ public class LeetCode441 {
 
     }
 
-    public static void main(String[] args) {
+    static void main() {
 
         LeetCode441 leetCode441 = new LeetCode441();
 
