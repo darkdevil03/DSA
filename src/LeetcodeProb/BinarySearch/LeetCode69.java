@@ -6,7 +6,7 @@ package LeetcodeProb.BinarySearch;
 
 public class LeetCode69 {
 
-        static int mySqrt(int x) {
+        public int mySqrt(int x) {
 
             if(x == 0 || x == 1){
                 return x;
@@ -36,9 +36,12 @@ public class LeetCode69 {
 
         }
 
-        public static void main(String[] args) {
+        static void main() {
             int num = 8;
-            System.out.println(mySqrt(num));
+
+            LeetCode69 leetCode69 = new LeetCode69();
+
+            System.out.println(leetCode69.mySqrt(num));
         }
 
 }
