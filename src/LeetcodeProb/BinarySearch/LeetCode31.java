@@ -40,7 +40,7 @@ import java.util.Arrays;
 public class LeetCode31 {
 
     // Approach 1: Hybrid Approach
-    static int[] searchRangeApproach1(int[] nums, int target) {
+    public int[] searchRangeApproach1(int[] nums, int target) {
         int low=0;
         int high=nums.length-1;
 
@@ -84,7 +84,7 @@ public class LeetCode31 {
 
 
     // Approach 2: Dual Binary Search
-    static int numSearch(int[] nums, int target, boolean isFirstSearch){
+    public int numSearch(int[] nums, int target, boolean isFirstSearch){
 
         int low = 0;
         int high = nums.length-1;
@@ -117,7 +117,7 @@ public class LeetCode31 {
         return bound;
     }
 
-    static int[] searchRangeApproach2(int[] nums, int target) {
+    public int[] searchRangeApproach2(int[] nums, int target) {
 
         int[] result = {-1, -1};
 
@@ -131,13 +131,15 @@ public class LeetCode31 {
     }
 
     // main for input checks
-    public static void main(String[] args) {
+    static void main() {
         int[] nums = {-1, 0, 1, 3, 3, 3, 10, 12};
         int target = 3;
 
-        System.out.println(Arrays.toString(searchRangeApproach1(nums, target)));
+        LeetCode31 leetCode31 = new LeetCode31();
 
-        System.out.println(Arrays.toString(searchRangeApproach2(nums, target)));
+        System.out.println(Arrays.toString(leetCode31.searchRangeApproach1(nums, target)));
+
+        System.out.println(Arrays.toString(leetCode31.searchRangeApproach2(nums, target)));
 
     }
 }
