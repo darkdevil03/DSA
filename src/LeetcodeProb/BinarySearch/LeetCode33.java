@@ -5,7 +5,7 @@ package LeetcodeProb.BinarySearch;
 */
 
 public class LeetCode33 {
-    static int search(int[] nums, int target) {
+    public int search(int[] nums, int target) {
 
         int start = 0;
         int end = nums.length - 1;
@@ -44,11 +44,13 @@ public class LeetCode33 {
     }
 
 
-    public static void main(String[] args) {
+    static void main() {
 
         // Taken one public case here
         int[] nums = {6,7,0,1,2,3,4,5};
 
-        System.out.println(search(nums,0) );
+        LeetCode33 leetCode33 = new LeetCode33();
+
+        System.out.println(leetCode33.search(nums,0) );
     }
 }
