@@ -6,7 +6,7 @@ package LeetcodeProb.BinarySearch;
 
 public class LeetCode153 {
 
-    static int findMin(int[] nums) {
+    public int findMin(int[] nums) {
         int start = 0;
         int end = nums.length - 1;
 
@@ -28,9 +28,12 @@ public class LeetCode153 {
         return nums[start];
     }
 
-    public static void main(String[] args) {
+    static void main() {
 
         int[] nums = {3,4,5,1,2};
-        System.out.println(findMin(nums));
+
+        LeetCode153 leetCode153 = new LeetCode153();
+
+        System.out.println(leetCode153.findMin(nums));
     }
 }
