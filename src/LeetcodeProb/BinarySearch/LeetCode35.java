@@ -8,7 +8,7 @@ package LeetcodeProb.BinarySearch;
 public class LeetCode35 {
 
     // Solution LeetCode 35
-    static int searchInsert(int[] nums, int target) {
+    public int searchInsert(int[] nums, int target) {
         int start=0;
         int end = nums.length-1;
         int mid=0;
@@ -34,10 +34,12 @@ public class LeetCode35 {
     }
 
     // main for input checks
-    public static void main(String[] args) {
+    static void main() {
         int[] nums = {-1,0,3,5,9,12};
         int target = 11;
 
-        System.out.println(searchInsert(nums,target));
+        LeetCode35 leetCode35 = new LeetCode35();
+
+        System.out.println(leetCode35.searchInsert(nums,target));
     }
 }
