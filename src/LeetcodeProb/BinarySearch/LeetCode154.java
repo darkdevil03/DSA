@@ -9,6 +9,7 @@ Daily Question
 public class LeetCode154 {
 
     public int findMin(int[] nums) {
+
         int start = 0;
         int end = nums.length - 1;
 
@@ -31,10 +32,12 @@ public class LeetCode154 {
         return nums[start];
     }
 
-    static void main(String[] args) {
+    static void main() {
 
         int[] nums = {3,3,3,1,3,3,3,3,3,3};
+
         LeetCode154 leetCode154 = new LeetCode154();
+
         System.out.println(leetCode154.findMin(nums));
     }
 
