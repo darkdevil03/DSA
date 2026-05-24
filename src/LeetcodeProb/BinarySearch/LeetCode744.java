@@ -6,7 +6,7 @@ package LeetcodeProb.BinarySearch;
 
 public class LeetCode744 {
 
-    static char nextGreatestLetter(char[] letters, char target) {
+    public char nextGreatestLetter(char[] letters, char target) {
         int start=0;
         int end = letters.length-1;
         int mid;
@@ -26,10 +26,12 @@ public class LeetCode744 {
         return letters[start % letters.length];  // simple and avoid multiple exceptions handling !
     }
 
-    public static void main(String[] args) {
+    static void main() {
         char[] letters = {'e','e','g','g'};
         char target = 'g';
 
-        System.out.println(nextGreatestLetter(letters,target));
+        LeetCode744 leetCode744 = new LeetCode744();
+
+        System.out.println(leetCode744.nextGreatestLetter(letters,target));
     }
 }

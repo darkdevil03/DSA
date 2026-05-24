@@ -18,13 +18,13 @@ public class LeetCode1351 {
 
     // Approach 1:
 
-    static int countNegativesApproch1(int[][] grid) {
+    public int countNegativesApproach1(int[][] grid) {
 
         int row = 0;
         int rowLen = grid.length;
         int count=0;
 
-        int randomCols = 0; // for the case m x n size
+        int randomCols; // for the case m x n size
 
         while(row < rowLen){
 
@@ -58,8 +58,8 @@ public class LeetCode1351 {
 
     // Approach 2:
 
-    static int countNegativesApproch2(int[][] grid) {
-        int row = 0;
+    public int countNegativesApproach2(int[][] grid) {
+
         int col = 0;
         int count=0;
         int pos = 0;
@@ -84,11 +84,14 @@ public class LeetCode1351 {
         return count;
     }
 
-    public static void main(String[] args) {
+    static void main() {
         int[][] grid = {{4,3,2,-1},{3,2,1,-1},{1,1,-1,-2},{-1,-1,-2,-3}};
-        //System.out.println(countNegativesApproach1(grid));
 
-        System.out.println(countNegativesApproch2(grid));
+        LeetCode1351 leetCode1351 = new LeetCode1351();
+
+        System.out.println(leetCode1351.countNegativesApproach1(grid));
+
+        System.out.println(leetCode1351.countNegativesApproach2(grid));
     }
 
 }

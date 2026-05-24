@@ -6,7 +6,7 @@ package LeetcodeProb.BinarySearch;
 public class LeetCode704 {
 
     // Solution method
-    static int search(int[] nums, int target) {
+    public int search(int[] nums, int target) {
 
         int start=0;
         int end = nums.length-1;
@@ -30,10 +30,12 @@ public class LeetCode704 {
     }
 
     // main for input checks
-    public static void main(String[] args) {
+    static void main() {
         int[] nums = {-1,0,3,5,9,12};
         int target = 9;
 
-        System.out.println(search(nums,target));
+        LeetCode704 leetCode704 = new LeetCode704();
+
+        System.out.println(leetCode704.search(nums,target));
     }
 }
