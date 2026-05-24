@@ -14,7 +14,7 @@ package ExamPattern;
 
 import java.util.Scanner;
 
-public class printPyramidPattern {
+public class PrintPyramidPattern {
 
     // Print pyramid pattern method
     static void printPyramid(int n) {

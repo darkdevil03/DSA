@@ -13,8 +13,9 @@ public class EvenDivideOddSubtOne {
         return steps;
     }
 
-    public static void main(String[] args) {
+     static void main() {
         int num=0;
+
         System.out.println(stepsToZero(num,0));
     }
 }

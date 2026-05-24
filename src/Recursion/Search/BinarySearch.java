@@ -1,7 +1,7 @@
 package Recursion.Search;
 
-import java.util.Arrays;
-import java.util.Scanner;
+// import java.util.Arrays;
+// import java.util.Scanner;
 
 public class BinarySearch {
 
@@ -21,7 +21,7 @@ public class BinarySearch {
         return -1;
     }
 
-    public static void main(String[] args) {
+    static void main() {
 
     /*
     // From reading random number to sorting number array :

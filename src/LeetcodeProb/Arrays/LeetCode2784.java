@@ -21,8 +21,7 @@ import java.util.Arrays;
 public class LeetCode2784 {
 
         // Approach 1: Cycle Sort
-
-            static boolean isGoodApproach1(int[] nums) {
+           public boolean isGoodApproach1(int[] nums) {
                 int len = nums.length;
                 int n = len - 1;
 
@@ -56,7 +55,7 @@ public class LeetCode2784 {
 
 
       //Approach 2: Count Sort
-            static boolean isGoodApproach2 ( int[] nums){
+            public boolean isGoodApproach2 ( int[] nums){
                 int len = nums.length;
 
                 int base = len - 1;
@@ -66,11 +65,10 @@ public class LeetCode2784 {
 
                 int[] track = new int[len];
 
-                for (int i = 0; i < len; i++) {             // O(N)
-                    if (nums[i] > base) {
+                for (int num : nums) {             // O(N)
+                    if (num > base)
                         return false;
-                    }
-                    track[nums[i]] = track[nums[i]] + 1;
+                    track[num] = track[num] + 1;
                 }
 
                 for (int i = 1; i < base; i++) {            // O(N-1)
@@ -83,7 +81,7 @@ public class LeetCode2784 {
 
 
     //Approach 3: Arrays Sort + Permutations Checks
-            static boolean isGoodApproach3 ( int[] nums){
+            public boolean isGoodApproach3 ( int[] nums){
 
                 Arrays.sort(nums);                      // N log(N)
 
@@ -98,14 +96,18 @@ public class LeetCode2784 {
             }
 
 
-            // Main
-            public static void main (String[]args){
+            // Main method for public cases testing
+            static void main (){
 
                 int[] nums = {1, 3, 3, 2};
 
-                System.out.println(isGoodApproach1(nums));
-                System.out.println(isGoodApproach2(nums));
-                System.out.println(isGoodApproach3(nums));
+                LeetCode2784 leetCode2784 = new LeetCode2784();
+
+                System.out.println(leetCode2784.isGoodApproach1(nums));
+
+                System.out.println(leetCode2784.isGoodApproach2(nums));
+
+                System.out.println(leetCode2784.isGoodApproach3(nums));
 
             }
         }

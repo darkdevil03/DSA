@@ -13,7 +13,7 @@ package ExamPattern;
 
 import java.util.Scanner;
 
-public class rightAngleTriangleNaturalNumberPattern {
+public class RightAngleTriangleNaturalNumberPattern {
 
     // Right angle triangle natural number pattern method
     static void RightAngleTriangleNaturalNumber(int n) {

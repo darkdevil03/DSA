@@ -11,10 +11,12 @@ public class FactorialNumber {
         return factorial(n-1)*n;
     }
 
-    public static void main(String[] args) {
+    static void main() {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter Number for Factorial : ");
         int num = sc.nextInt();
+
         if(num<0){
             System.out.println("Invalid Input!!");
         }

@@ -6,7 +6,7 @@ package LeetcodeProb.DynamicProgramming.Arrays;
 
 public class LeetCode396 {
 
-    static int maxRotateFunction(int[] nums) {
+    public int maxRotateFunction(int[] nums) {
 
         int len = nums.length ;
 
@@ -37,9 +37,12 @@ public class LeetCode396 {
 
     }
 
-    public static void main(String[] args) {
+    static void main() {
         int[] nums = {4,3,2,6};
-        System.out.println(maxRotateFunction(nums));
+
+        LeetCode396 leetCode396 = new LeetCode396();
+
+        System.out.println(leetCode396.maxRotateFunction(nums));
     }
 
 }

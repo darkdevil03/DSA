@@ -17,7 +17,7 @@ package ExamPattern;
  */
 import java.util.Scanner;
 
-public class frontArrowHeadPattern {
+public class FrontArrowHeadPattern {
 
     // Front arrow head pattern method
     static void frontArrowHead(int n) {

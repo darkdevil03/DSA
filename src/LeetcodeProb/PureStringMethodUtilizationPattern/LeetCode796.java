@@ -6,7 +6,7 @@ Daily Question
 */
 
 public class LeetCode796 {
-    static boolean rotateString(String s, String goal) {
+    public boolean rotateString(String s, String goal) {
 
         if(s.length() != goal.length()){
             return false;
@@ -29,12 +29,14 @@ public class LeetCode796 {
 
     }
 
-    public static void main(String[] args) {
+    static void main() {
 
         // Taken one public case here
         String given_s= "abcde";
         String given_goal= "cdeab";
 
-        System.out.println(rotateString(given_s,given_goal) );
+        LeetCode796 leetCode796 = new LeetCode796();
+
+        System.out.println(leetCode796.rotateString(given_s,given_goal) );
     }
 }

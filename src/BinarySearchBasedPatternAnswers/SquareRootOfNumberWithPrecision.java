@@ -49,7 +49,7 @@ package BinarySearchBasedPatternAnswers;
 
 import java.util.Scanner;
 
-public class SquareRootOfNumber {
+public class SquareRootOfNumberWithPrecision {
     public static void main(String[] args) {
          // calculated till 3 digits after decimal point is fixed.
 

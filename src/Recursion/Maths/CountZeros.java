@@ -11,8 +11,10 @@ public class CountZeros {
         }
         return ans+count(num/10);
     }
-    public static void main(String[] args) {
+
+    static void main() {
         int num=3020020;
+
         System.out.print("Number of Zeros in given input : "+count(num));
     }
 }

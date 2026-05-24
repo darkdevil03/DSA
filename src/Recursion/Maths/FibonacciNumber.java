@@ -11,10 +11,12 @@ public class FibonacciNumber {
         return fibonacci(n-1)+fibonacci(n-2);
     }
 
-    public static void main(String[] args) {
+    static void main() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter nth for fibonacci number : ");
+
+        System.out.print("Enter nth for Fibonacci number : ");
         int num = sc.nextInt();
+
         if(num<0){
             System.out.println("Invalid Input!!");
         }

@@ -14,7 +14,7 @@ package ExamPattern;
 
 import java.util.Scanner;
 
-public class reverseRightAngleTrianglePattern {
+public class ReverseRightAngleTrianglePattern {
 
     // Reverse right angle triangle pattern method
     static void  reverseRightAngleTriangle(int n) {

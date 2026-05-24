@@ -1,5 +1,10 @@
 package CollectionsBuild.LinkedList;
 
+/*
+    Main method written separately in the same package "CollectionsBuild.LinkedList" of name LLMain
+
+ */
+
 class Node{
     int val;
     Node next;

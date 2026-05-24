@@ -1,6 +1,6 @@
 package Recursion.Base;
 
-public class prog2_PrintNaturalNumbers {
+public class PrintNaturalNumbers {
 
     static void printNumber(int num){
         if(num==1){

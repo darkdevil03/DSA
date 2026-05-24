@@ -1,6 +1,6 @@
 package Recursion.Base;
 
-public class prog1_HelloWorldRecursive {
+public class HelloWorldRecursive {
 
     static void print(String str,int iterateCount){
         if(iterateCount==0){
@@ -11,9 +11,10 @@ public class prog1_HelloWorldRecursive {
         System.out.println(str+" --> "+iterateCount+ " After return!"); // 1,2,3 - order of printing (rev)
     }
 
-    public static void main(String[] args) {
+    static void main() {
         String input="Hello World";
         int repeat=3;
+
         print(input,repeat);
     }
 }
