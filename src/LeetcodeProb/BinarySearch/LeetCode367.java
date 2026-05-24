@@ -29,9 +29,11 @@ public class LeetCode367 {
         return false;
     }
 
-    public static void main(String[] args) {
+    static void main() {
         int num = 16;
+
         LeetCode367 leetCode367 = new LeetCode367();
+
         System.out.println(leetCode367.isPerfectSquare(num));
     }
 }
