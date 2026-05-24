@@ -8,7 +8,7 @@ Daily Question
 
 public class LeetCode154 {
 
-    static int findMin(int[] nums) {
+    public int findMin(int[] nums) {
         int start = 0;
         int end = nums.length - 1;
 
@@ -31,11 +31,11 @@ public class LeetCode154 {
         return nums[start];
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         int[] nums = {3,3,3,1,3,3,3,3,3,3};
-
-        System.out.println(findMin(nums));
+        LeetCode154 leetCode154 = new LeetCode154();
+        System.out.println(leetCode154.findMin(nums));
     }
 
 }
