@@ -24,10 +24,7 @@ public class MergeSort {
         int[] leftArr=new int[lenLeft];
         int[] rightArr=new int[lenRight];
 
-        for(int x=0;x<lenLeft;x++)
-        {
-            leftArr[x]=arr[x+left];
-        }
+        System.arraycopy(arr, left, leftArr, 0, lenLeft);
 
         for(int y=0;y<lenRight;y++)
         {
