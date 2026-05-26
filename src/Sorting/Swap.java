@@ -5,6 +5,5 @@ public class Swap {
         int temp = arr[x];
         arr[x] = arr[y];
         arr[y] = temp;
-
     }
 }
