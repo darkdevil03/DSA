@@ -37,4 +37,38 @@ public class InsertionSort {
         return arr;
     }
 
+    static void main(){
+
+    // Insertion Sort
+        int[] iAscArr={3,6,2,1,5};
+        int[] iDesArr={3,6,2,1,5};
+
+        System.out.print("Before Bubble Sorting : ");
+        for (int nums : iAscArr) {
+            System.out.print(nums + " ");
+        }
+
+        System.out.println();
+
+        InsertionSort insertionSort = new InsertionSort();
+
+        System.out.print("Insertion Sorting Ascending Order : ");
+
+    //Ascending Order
+        int[] resultInsertionAsc=insertionSort.insertionSortAsc(iAscArr);
+        for(int nums : resultInsertionAsc){
+            System.out.print(nums + " ");
+        }
+
+        System.out.println();
+
+    // Descending Order
+        System.out.print("Insertion Sorting Descending Order : ");
+        int[] resultInsertionDsc=insertionSort.insertionSortDsc(iDesArr);
+        for(int nums : resultInsertionDsc){
+            System.out.print(nums + " ");
+        }
+
+    }
+
 }
