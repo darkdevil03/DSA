@@ -1,5 +1,7 @@
 package Sorting;
 
+import java.util.Arrays;
+
 public class MergeSort {
     public void mergeSort(int[] arr, int leftLow, int rightHigh){
 
@@ -46,7 +48,6 @@ public class MergeSort {
             k++;
         }
 
-
         while(i<lenLeft){
                 arr[k]=leftArr[i];
                 i++;
@@ -58,6 +59,22 @@ public class MergeSort {
                 k++;
         }
 
+    }
+
+    static void main(){
+
+    // Merge Sort
+        int[] arr = {5, 1, 38, 2, 6, 1, 1, 4, 2, 38};
+
+        MergeSort mergeSort = new MergeSort();
+
+        System.out.println("Before sorting to ascending order : "+ Arrays.toString(arr));
+
+        mergeSort.mergeSort(arr, 0, arr.length - 1);
+
+        System.out.print("After sorting to ascending order : ");
+        for (int nums : arr)
+            System.out.print(nums + " ");
 
     }
 

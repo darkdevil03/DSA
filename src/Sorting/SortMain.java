@@ -81,15 +81,8 @@ public class SortMain {
             System.out.print(nums + " ");
         }
 */
-/*
-// Merge Sort
-        int[] arr = {5, 1, 38, 2, 6, 1, 1, 4, 2, 38};
-        MergeSort mergeSort = new MergeSort();
-        mergeSort.mergeSort(arr, 0, arr.length - 1);
-        for (int nums : arr) {
-            System.out.print(nums + " ");
-        }
-*/
+
+
 
 
 
