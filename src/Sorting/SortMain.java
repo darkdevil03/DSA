@@ -73,13 +73,7 @@ public class SortMain {
 /*
 
 /*
-//Quick Sort
-        int[] arr={5,3,6,1,4,2};
-        QuickSort quickSort = new QuickSort();
-        int[] resultQuickSortAsc=quickSort.quickSortAsc(arr,0, arr.length-1);
-        for(int nums : resultQuickSortAsc){
-            System.out.print(nums + " ");
-        }
+
 */
 
 
