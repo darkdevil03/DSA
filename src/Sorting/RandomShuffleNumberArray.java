@@ -33,6 +33,8 @@ public class RandomShuffleNumberArray {
 
 /*
 
+    // For checking logic via main method :
+
     public static void main(String[] args) {
         int n = 10; // Range from 1 to n
 
