@@ -119,42 +119,7 @@ public class SortMain {
         }
 */
 
-//Cycle Sort
-        RandomShuffleNumberArray oneToNGen= new RandomShuffleNumberArray();
-        int[] rangeArr1= oneToNGen.oneToNIntegers(15);
-        int[] rangeArr2 = Arrays.copyOf(rangeArr1, rangeArr1.length);
 
-        System.out.println("Input Arrays Integers Before Sorting ");
-        System.out.println(" Standard Cycle Sort : " + Arrays.toString(rangeArr1));
-        System.out.println(" Trial Cycle Sort    :   " + Arrays.toString(rangeArr2));
-
-
-//        int[] rangeArr1 = {2,1,5,4,3,6,7,8,10,9};
-//        int[] rangeArr2 = {2,1,5,4,3,6,7,8,10,9};
-
-        CycleSort standard = new CycleSort();
-
-        System.out.println("Input Arrays Integers After Sorting ");
-
-        System.out.println("Standard Cycle sort: ");
-        standard.cycleSortStandard(rangeArr1);
-        for (int nums : rangeArr1) {
-            System.out.print(nums + " ");
-        }
-
-        System.out.println();
-        System.out.println("Trial cycle Sort: ");
-        CycleSort trial = new CycleSort();
-        trial.cycleSortTrial(rangeArr2);
-        for (int nums : rangeArr2) {
-            System.out.print(nums + " ");
-        }
-        System.out.println();
-
-        if (!Objects.equals(rangeArr2, rangeArr1)) System.out.println(" False ");
-        else {
-            System.out.println(" True ");
-        }
 
     }
 }
