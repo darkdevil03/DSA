@@ -5,6 +5,8 @@ package LeetcodeProb.BitManipulation;
 */
 
 public class LeetCode191 {
+
+    // Approach-1: Standard approach
     public int hammingWeight(int n) {
         int count = 0;
 
@@ -18,13 +20,15 @@ public class LeetCode191 {
         return count;
     }
 
-    // The Ultimate Optimization (Brian Kernighan's)
+    // Approach-2: The Ultimate Optimization (Brian Kernighan's)
     public int hammingWeightApproach2(int n) {
         int count = 0;
+
         while(n != 0){
             n = n & (n-1);
             count++;
         }
+
         return count;
     }
 
