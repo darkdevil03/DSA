@@ -2,6 +2,11 @@ package LeetcodeProb.BitManipulation;
 
 /*
     https://leetcode.com/problems/find-the-difference?envType=problem-list-v2&envId=bit-manipulation
+
+        Time Complexity : O(N) because we only traverse the strings once.
+
+        Space Complexity: O(1) auxiliary space. Unlike using a Hash Map or an integer frequency array,
+                           we aren't allocating any extra memory structures.
 */
 
 public class LeetCode389 {
