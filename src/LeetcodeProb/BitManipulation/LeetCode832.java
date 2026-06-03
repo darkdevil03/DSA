@@ -2,6 +2,21 @@ package LeetcodeProb.BitManipulation;
 
 /*
     https://leetcode.com/problems/flipping-an-image?envType=problem-list-v2&envId=bit-manipulation
+
+    Time Complexity: O(n*n)
+        Row Loop        : The outer loop runs exactly $n$ times, where n is the number of rows in the matrix (image.length).
+        Column Loop     : For each row, the inner loop runs from col = 0 up to col <= colLen / 2.
+                          This means it iterates exactly (n/2) times (half the number of columns).
+        Work Per Element: Inside the inner loop, swapping and inverting elements takes constant time, O(1).
+                          Putting it together, the total number of operations is roughly: n * (n/2) =  ((n*n)/2).
+
+
+    Space Complexity : O(1)
+        In-Place Modification : Our code modifies the input image matrix directly in place.
+        Auxiliary Space       : We only use a few primitive variables (row, colLen, col, and temp),
+                                which take up a constant amount of memory regardless of the matrix size.
+                                Therefore, the auxiliary space complexity is O(1) (constant space).
+
 */
 
 import java.util.Arrays;
