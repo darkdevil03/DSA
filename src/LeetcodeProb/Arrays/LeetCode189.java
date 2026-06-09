@@ -40,6 +40,6 @@ public class LeetCode189 {
 
     static void main(){
         LeetCode189 leetCode189 = new LeetCode189();
-        leetCode189.rotate(new int[]{1,2,3,4,5,6,7}, 7);
+        leetCode189.rotate(new int[]{1,2,3,4,5,6,7}, 3);
     }
 }
