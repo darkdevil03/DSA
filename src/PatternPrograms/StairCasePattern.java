@@ -1,4 +1,4 @@
-package ExamPattern;
+package PatternPrograms;
 
 /*
     Stair Case Pattern Representation (for n=6) :

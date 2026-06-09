@@ -1,4 +1,4 @@
-package ExamPattern;
+package PatternPrograms;
 
 /*
     Front Arrow Head Pattern Representation (for n=6) :

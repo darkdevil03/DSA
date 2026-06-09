@@ -1,4 +1,4 @@
-package ExamPattern;
+package PatternPrograms;
 
 /*
     Print Pyramid Pattern Representation (n=6) :

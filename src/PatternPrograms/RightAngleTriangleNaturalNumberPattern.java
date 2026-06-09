@@ -1,4 +1,4 @@
-package ExamPattern;
+package PatternPrograms;
 
 /*
     Right Angle Triangle Natural Number Pattern Representation (for n=6) :

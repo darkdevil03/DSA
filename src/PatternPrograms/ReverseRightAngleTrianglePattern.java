@@ -1,4 +1,4 @@
-package ExamPattern;
+package PatternPrograms;
 
 /*
     Reverse Right Angle Triangle Pattern Representation (for n=6) :
