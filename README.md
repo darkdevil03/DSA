@@ -32,7 +32,7 @@ If you are a beginner or looking for a structured approach to study this reposit
 * Start with basic syntax, loops, and conditional statements.
 * Practice logical thinking by implementing programs in the `PatternPrograms` directory.
 
-### 2. Time & Space Complexity ($O(n)$)
+### 2. Time & Space Complexity (O(n))
 * Before writing complex algorithms, learn how to measure code efficiency using Big O notation.
 
 ### 3. Divide & Conquer (Recursion)
