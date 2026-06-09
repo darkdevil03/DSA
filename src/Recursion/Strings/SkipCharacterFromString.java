@@ -2,18 +2,32 @@ package Recursion.Strings;
 
 public class SkipCharacterFromString {
 
-
-    static void skipOneChar(String str,String up,char skipChar){
+    // void return type approach :
+    static void skipOneCharVoidReturnType(String str,String up,char skipChar){
         if(up.isBlank()){
             System.out.println(str);
             return;
         }
 
         if(up.charAt(0)==skipChar){
-            skipOneChar(str,up.substring(1),skipChar);
+            skipOneCharVoidReturnType(str,up.substring(1),skipChar);
         }else{
-            skipOneChar(str + up.charAt(0), up.substring(1), skipChar);
+            skipOneCharVoidReturnType(str + up.charAt(0), up.substring(1), skipChar);
         }
+    }
+
+    // String return type approach :
+    static String skipOneCharStringReturnType(String str,char skipChar){
+
+        if(str.isEmpty()){
+            return "";
+        }
+        if(str.charAt(0) == skipChar){
+            return skipOneCharStringReturnType(str.substring(1),skipChar);
+        }else{
+            return  str.charAt(0)+ skipOneCharStringReturnType(str.substring(1), skipChar);
+        }
+
     }
 
     static void main(){
@@ -21,7 +35,12 @@ public class SkipCharacterFromString {
         String input = "abcdafga";
         char toSkip = 'a';
 
+        // void return type approach :
         System.out.print("After skipping character '"+toSkip+"' from string '"+input+"' : ");
-        skipOneChar("",input,toSkip);
+        skipOneCharVoidReturnType("",input,toSkip);
+
+        // String return type approach :
+        System.out.print("After skipping character '"+toSkip+"' from string '"+input+"' : ");
+        System.out.print(skipOneCharStringReturnType(input,toSkip));
     }
 }
