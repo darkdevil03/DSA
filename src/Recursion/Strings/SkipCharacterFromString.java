@@ -30,6 +30,21 @@ public class SkipCharacterFromString {
 
     }
 
+    // Using StringBuilder :
+    static void skipOneCharUsingStringBuilder(StringBuilder str,char skipChar,int index){
+
+        if(index == (str.length()) ){
+            System.out.println(str);
+            return;
+        }
+        if(str.charAt(index) == skipChar){
+            skipOneCharUsingStringBuilder(str.deleteCharAt(index),skipChar, index);
+        }else{
+            skipOneCharUsingStringBuilder(str, skipChar, index + 1);
+        }
+
+    }
+
     static void main(){
 
         String input = "abcdafga";
@@ -42,5 +57,10 @@ public class SkipCharacterFromString {
         // String return type approach :
         System.out.print("After skipping character '"+toSkip+"' from string '"+input+"' : ");
         System.out.print(skipOneCharStringReturnType(input,toSkip));
+
+        // Using StringBuilder type :
+        System.out.printf("\nAfter skipping character '"+toSkip+"' from string '"+input+"' : ");
+        skipOneCharUsingStringBuilder(new StringBuilder(input), toSkip, 0);
+
     }
 }
