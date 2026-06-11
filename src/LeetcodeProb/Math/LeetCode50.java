@@ -37,10 +37,11 @@ public class LeetCode50 {
         }
 
         while(N > 0){
-
+            // If N is odd, multiply the current product to the result
             if((N & 1) == 1){
                 res = res * x;
             }
+            // Square the base and halve the exponents
             x = x * x;
             N /=2;
         }
