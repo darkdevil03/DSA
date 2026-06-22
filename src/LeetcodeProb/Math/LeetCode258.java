@@ -1,6 +1,11 @@
 package LeetcodeProb.Math;
 
+/*
+    https://leetcode.com/problems/add-digits?envType=problem-list-v2&envId=math
+ */
+
 public class LeetCode258 {
+
     public int addDigits(int num) {
 
         int sum = 0;
@@ -17,7 +22,7 @@ public class LeetCode258 {
         return sum;
     }
 
-    static void main(String[] args) {
+    static void main() {
         LeetCode258 leetCode258 = new LeetCode258();
         System.out.println(leetCode258.addDigits(38));
     }
