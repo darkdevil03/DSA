@@ -57,10 +57,16 @@ public class LeetCode258 {
         return num % 9;
     }
 
+    // A single mathematical formula
+    public int addDigitsApproach3(int num) {
+        return 1 + ((num - 1) % 9);
+    }
+
     // Main method
     static void main() {
         LeetCode258 leetCode258 = new LeetCode258();
         System.out.println(leetCode258.addDigitsApproach1(38));
         System.out.println(leetCode258.addDigitsApproach2(38));
+        System.out.println(leetCode258.addDigitsApproach3(38));
     }
 }
