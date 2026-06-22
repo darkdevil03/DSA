@@ -6,8 +6,8 @@ package LeetcodeProb.Math;
 
 public class LeetCode258 {
 
-    public int addDigits(int num) {
-
+    // Loop based approach
+    public int addDigitsApproach1(int num) {
         int sum = 0;
 
         while(num > 0){
@@ -22,8 +22,21 @@ public class LeetCode258 {
         return sum;
     }
 
+    // Optimized : Single modulo arithmetic operation approach
+    public int addDigitsApproach2(int num) {
+
+        if (num == 0)
+            return 0;
+        if (num % 9 == 0)
+            return 9;
+
+        return num % 9;
+    }
+
+    // Main method
     static void main() {
         LeetCode258 leetCode258 = new LeetCode258();
-        System.out.println(leetCode258.addDigits(38));
+        System.out.println(leetCode258.addDigitsApproach1(38));
+        System.out.println(leetCode258.addDigitsApproach2(38));
     }
 }
