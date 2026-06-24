@@ -18,6 +18,16 @@ package course_01_core_java.chapter04_oops;
                 explicitly state that any other class can create a Cat object.
             3. The 'this' Keyword While not strictly required in our specific constructor since there are no parameter names clashing with variable names,
                using this.name and this.age is a great habit to form. It makes our code highly readable by explicitly signaling,
+            4. The Role of Getters (Accessors)
+               Because you made name and age private to protect them, other classes (like your main method) can no longer read the cat's name or age directly.
+               They are completely locked out. Getters act as the "controlled doorways" to that data.
+
+               -> Safe Reading: Methods like getName() and getAge() simply read the current state of a private variable and return it to whoever asked for it.
+                                They allow outside classes to look at the data without being able to touch or alter it.
+
+               ->  Read-Only Data: By only writing getters (like in your snippet) and omitting setters,
+                                   you have effectively made name and age "read-only" from the outside.
+                                   Once the Cat is created, no outside class can forcibly rename it or change its age.
 
  */
 
@@ -34,10 +44,20 @@ class Cat{
         this.age = 0;               // <- age = 0;
     }
 
-    // 4. Method to print the values
+    // 4a. Method to print the values
     public void printCat(){
         System.out.println("Name: " + this.name);
         System.out.println("Age: " + this.age);
+    }
+
+    // 4b. Getter
+    // Getter for name
+    public String getName() {
+        return name;
+    }
+    // Getter for age
+    public int getAge() {
+        return age;
     }
 }
 
@@ -46,5 +66,7 @@ public class Ex01_DefaultConstructor {
     static  void main(){
         Cat cat = new Cat();
         cat.printCat();
+        System.out.println("Name: " +cat.getName());
+        System.out.println("Age: " +cat.getAge());
     }
 }
