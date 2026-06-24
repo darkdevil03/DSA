@@ -14,12 +14,12 @@ The codebase is organized into modular directories based on topics and problem c
 
 | Folder / File | Description |
 | :--- | :--- |
-| 📁 `Recursion` | Core concepts, string manipulations, and divide-and-conquer problems using recursion. |
-| 📁 `Sorting` | Implementations of standard sorting algorithms (Bubble, Selection, Insertion, Merge, Quick, etc.). |
-| 📁 `BinarySearchBasedPatternAnswers` | Binary Search implementations and pattern-based problem variations. |
-| 📁 `CollectionsBuild/LinkedList` | Custom implementations of Linked Lists and built-in Java Collections Framework usage. |
-| 📁 `PatternPrograms` | Logical pattern printing questions frequently asked in foundation and exam patterns. |
-| 📁 `LeetcodeProb` | Curated solutions to popular LeetCode problems (optimized for runtime and space complexity). |
+| 📁 `course_02_recursion` | Core concepts, string manipulations, and divide-and-conquer problems using course_02_recursion. |
+| 📁 `course_04_sorting` | Implementations of standard course_04_sorting algorithms (Bubble, Selection, Insertion, Merge, Quick, etc.). |
+| 📁 `course_03_search.chapter02_binary_search` | Binary Search implementations and pattern-based problem variations. |
+| 📁 `course_01_core_java.chapter03_data_structures/LinkedList` | Custom implementations of Linked Lists and built-in Java Collections Framework usage. |
+| 📁 `course_01_core_java.chapter02_loops.pattern_programs` | Logical pattern printing questions frequently asked in foundation and exam patterns. |
+| 📁 `leetcode_problems` | Curated solutions to popular LeetCode problems (optimized for runtime and space complexity). |
 | 📄 `HelloWorld.java` | Smoke test file to verify your Java environment setup. |
 
 ---
@@ -30,28 +30,28 @@ If you are a beginner or looking for a structured approach to study this reposit
 
 ### 1. Fundamentals & Logic Building
 * Start with basic syntax, loops, and conditional statements.
-* Practice logical thinking by implementing programs in the `PatternPrograms` directory.
+* Practice logical thinking by implementing programs in the `course_01_core_java.chapter02_loops.pattern_programs` directory.
 
 ### 2. Time & Space Complexity (O(n))
 * Before writing complex algorithms, learn how to measure code efficiency using Big O notation.
 
-### 3. Divide & Conquer (Recursion)
-* Master `Recursion` early. It acts as the backbone for advanced topics like Trees, Graphs, and Dynamic Programming.
+### 3. Divide & Conquer (course_02_recursion)
+* Master `course_02_recursion` early. It acts as the backbone for advanced topics like Trees, Graphs, and Dynamic Programming.
 
-### 4. Linear Data Structures & Sorting
-* Learn how data is stored sequentially. Dive into `Sorting` algorithms and understand the mechanics of custom implementations like `CollectionsBuild/LinkedList`.
+### 4. Linear Data Structures & course_04_sorting
+* Learn how data is stored sequentially. Dive into `course_04_sorting` algorithms and understand the mechanics of custom implementations like `course_01_core_java.chapter03_data_structures/LinkedList`.
 
 ### 5. Searching Algorithms
-* Move on to optimized searching. Explore the `BinarySearchBasedPatternAnswers` folder to understand how to reduce time complexity from $O(n)$ to $O(\log n)$.
+* Move on to optimized searching. Explore the `course_03_search.chapter02_binary_search` folder to understand how to reduce time complexity from $O(n)$ to $O(\log n)$.
 
 ### 6. LeetCode Problem Solving
-* Apply your foundational knowledge to real-world interview questions located in the `LeetcodeProb` directory.
+* Apply your foundational knowledge to real-world interview questions located in the `leetcode_problems` directory.
 
 ---
 
 ## 💡 LeetCode Problem Solving Guide
 
-When solving problems in the `LeetcodeProb` folder, follow this 4-step framework to maximize your learning:
+When solving problems in the `leetcode_problems` folder, follow this 4-step framework to maximize your learning:
 
 > 🟩 **Step 1: Understand the Constraints** > Read the problem carefully. Look at the constraints (e.g., $N \le 10^5$). This tells you whether an $O(n^2)$ solution will pass or if you need an optimized $O(n)$ or $O(n \log n)$ approach.
 >
