@@ -1,6 +1,6 @@
 package course_04_sorting;
 
-public class SelectionSort {
+public class Ex03_SelectionSort {
 
     Swap s=new Swap();  // method: swap(arr,index1,index2) from import Sorting.Swap; package
 
@@ -51,7 +51,7 @@ public class SelectionSort {
 
         System.out.println();
 
-        SelectionSort selection=new SelectionSort();
+        Ex03_SelectionSort selection=new Ex03_SelectionSort();
 
     // Ascending Order
         System.out.print("Ascending order using selection sorting : ");

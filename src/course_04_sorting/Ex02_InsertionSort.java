@@ -1,6 +1,6 @@
 package course_04_sorting;
 
-public class InsertionSort {
+public class Ex02_InsertionSort {
 
     //Ascending Order
     public int[] insertionSortAsc(int[] arr){
@@ -50,7 +50,7 @@ public class InsertionSort {
 
         System.out.println();
 
-        InsertionSort insertionSort = new InsertionSort();
+        Ex02_InsertionSort insertionSort = new Ex02_InsertionSort();
 
         System.out.print("Insertion Sorting Ascending Order : ");
 

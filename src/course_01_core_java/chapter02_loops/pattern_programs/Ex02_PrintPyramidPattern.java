@@ -14,7 +14,7 @@ package course_01_core_java.chapter02_loops.pattern_programs;
 
 import java.util.Scanner;
 
-public class PrintPyramidPattern {
+public class Ex02_PrintPyramidPattern {
 
     // Print pyramid pattern method
     static void printPyramid(int n) {

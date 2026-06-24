@@ -1,6 +1,6 @@
 package course_04_sorting;
 
-public class BubbleSort {
+public class Ex01_BubbleSort {
 
     Swap s=new Swap();  // method: swap(arr,index1,index2) from import Sorting.Swap; package
 
@@ -42,7 +42,7 @@ public class BubbleSort {
 
         //Bubble Sort Ascending Order
         System.out.print("Bubble Sorting Ascending Order : ");
-        BubbleSort bubbleAsc = new BubbleSort();
+        Ex01_BubbleSort bubbleAsc = new Ex01_BubbleSort();
         int[] resultAsc = bubbleAsc.BubbleSortAsc(arrForAsc);
         for (int nums : resultAsc) {
             System.out.print(nums + " ");
@@ -52,7 +52,7 @@ public class BubbleSort {
 
         //Bubble Sort Descending Order
         System.out.print("Bubble Sorting Descending Order : ");
-        BubbleSort bubbleDsc = new BubbleSort();
+        Ex01_BubbleSort bubbleDsc = new Ex01_BubbleSort();
         int[] resultDsc = bubbleDsc.BubbleSortDes(arrForDes);
         for(int nums :resultDsc) {
             System.out.print(nums + " ");

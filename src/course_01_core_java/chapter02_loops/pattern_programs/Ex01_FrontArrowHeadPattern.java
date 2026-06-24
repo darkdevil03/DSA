@@ -17,7 +17,7 @@ package course_01_core_java.chapter02_loops.pattern_programs;
  */
 import java.util.Scanner;
 
-public class FrontArrowHeadPattern {
+public class Ex01_FrontArrowHeadPattern {
 
     // Front arrow head pattern method
     static void frontArrowHead(int n) {

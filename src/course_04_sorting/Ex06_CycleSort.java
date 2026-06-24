@@ -2,7 +2,7 @@ package course_04_sorting;
 
 import java.util.Arrays;
 
-public class CycleSort {
+public class Ex06_CycleSort {
 
     // for the range 1 to n elements of unsorted
     static Swap s = new Swap();    // method: swap(arr,index1,index2) from import Sorting.Swap; package

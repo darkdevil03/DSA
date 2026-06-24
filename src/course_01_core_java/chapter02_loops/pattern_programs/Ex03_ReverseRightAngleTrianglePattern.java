@@ -14,7 +14,7 @@ package course_01_core_java.chapter02_loops.pattern_programs;
 
 import java.util.Scanner;
 
-public class ReverseRightAngleTrianglePattern {
+public class Ex03_ReverseRightAngleTrianglePattern {
 
     // Reverse right angle triangle pattern method
     static void  reverseRightAngleTriangle(int n) {

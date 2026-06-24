@@ -2,7 +2,7 @@ package course_04_sorting;
 
 import java.util.Arrays;
 
-public class QuickSort {
+public class Ex04_QuickSort {
 
     Swap s=new Swap();          // method: swap(arr,index1,index2) from import Sorting.Swap; package
 
@@ -37,7 +37,7 @@ public class QuickSort {
     //Quick Sort
         int[] arr={5,3,6,1,4,2};
 
-        QuickSort quickSort = new QuickSort();
+        Ex04_QuickSort quickSort = new Ex04_QuickSort();
 
         System.out.println("Before sorting to ascending order : "+ Arrays.toString(arr));
 

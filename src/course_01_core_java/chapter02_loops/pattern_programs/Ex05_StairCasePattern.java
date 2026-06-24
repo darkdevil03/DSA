@@ -14,7 +14,7 @@ package course_01_core_java.chapter02_loops.pattern_programs;
 
 import java.util.Scanner;
 
-public class StairCasePattern {
+public class Ex05_StairCasePattern {
 
     // Stair Case Pattern
     static void stairCase(int n) {

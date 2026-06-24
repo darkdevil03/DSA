@@ -2,7 +2,7 @@ package course_04_sorting;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class Ex05_MergeSort {
     public void mergeSort(int[] arr, int leftLow, int rightHigh){
 
         if(leftLow<rightHigh){
@@ -63,7 +63,7 @@ public class MergeSort {
     // Merge Sort
         int[] arr = {5, 1, 38, 2, 6, 1, 1, 4, 2, 38};
 
-        MergeSort mergeSort = new MergeSort();
+        Ex05_MergeSort mergeSort = new Ex05_MergeSort();
 
         System.out.println("Before sorting to ascending order : "+ Arrays.toString(arr));
 
