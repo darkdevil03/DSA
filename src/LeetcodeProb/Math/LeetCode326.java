@@ -1,5 +1,9 @@
 package LeetcodeProb.Math;
 
+/*
+    https://leetcode.com/problems/power-of-three?envType=problem-list-v2&envId=math
+ */
+
 public class LeetCode326 {
     public boolean isPowerOfThree(int n) {
         if(n <= 0)
