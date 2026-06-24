@@ -2,19 +2,18 @@ package course_01_core_java.chapter03_data_structures.linked_list;
 
 /*
     Main method written separately in the same package "collectionsBuild.LinkedList" of name LLMain
-
- */
+*/
 
 class Node{
     int val;
     Node next;
     public Node(int val){ // node
         this.val=val; //
-        //System.out.println(this.val+" : "+this.next); // Checks
+        // System.out.println(this.val+" : "+this.next); // Checks
     }
 }
 
-public class SingleLL{
+public class Ex01_SingleLL{
 
     Node head;
 
@@ -133,7 +132,4 @@ public class SingleLL{
         }
         System.out.println();
     }
-
-
-
 }
