@@ -2,6 +2,10 @@ package LeetcodeProb.Math;
 
 /*
     https://leetcode.com/problems/power-of-three?envType=problem-list-v2&envId=math
+
+    Complexity Analysis
+        Time Complexity : O(log_(3) n)
+        Space Complexity: O(1)
  */
 
 public class LeetCode326 {
