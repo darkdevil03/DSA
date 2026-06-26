@@ -27,9 +27,9 @@ package course_01_core_java.chapter04_oops;
 
 class Book{
     // 1. Encapsulation & Immutability: Added the 'final' keyword
-    private final String title; // By default String variable null
+    private final String title; // By default, String variable null
     private final String author;
-    private double price; // By default 0.0
+    private double price; // By default, 0.0
 
     // 2. Default Constructor
     public Book(){
