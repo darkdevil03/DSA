@@ -21,13 +21,23 @@ package leetcode_problems.math;
          -> Only two pointer variables (slowRunner and fastRunner) are tracked sequentially.
             No historical data structures are created, making this approach extremely memory efficient.
 
+    2. Using a Hash Set Approach:
+            This approach caches every generated number into a lookup table until it hits 1 or detects a repeat value.
+       Time Complexity: O(log n)
+         -> The core math behaves identically to the Two Pointers approach. The series quickly drops into a small bounded range under 730.
+            Checking and inserting items in a HashSet takes an average time complexity of O(1).
+            Thus, the overall runtime scales strictly with the number of digits of the initial input, making it O(log n).
+       Space Complexity: O(log n) (effectively bounded by O(1) practically)
+         -> Strict Theoretical Bound: The total elements stored in the HashSet are proportional to the size of the chain lengths traversed.
+         -> Practical Bound: Because any large integer collapses below 730 in a single step,
+            the HashSet will never store more than a tiny handful of values (the longest cycle sequence for numbers in this range is less than 10 values long).
+            While theoretically dependent on the input's path size, it behaves like O(1) auxiliary space in practical implementation.
 */
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class LeetCode202 {
-
 
     // Helper function to calculate the sum of squares of digits
     private int getNext(int n) {
