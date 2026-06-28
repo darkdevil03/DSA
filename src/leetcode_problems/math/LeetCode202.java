@@ -23,9 +23,12 @@ package leetcode_problems.math;
 
 */
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class LeetCode202 {
 
-    // Two Pointers (Floyd's Tortoise and Hare) approach
+
     // Helper function to calculate the sum of squares of digits
     private int getNext(int n) {
         int totalSum = 0;
@@ -37,7 +40,8 @@ public class LeetCode202 {
         return totalSum;
     }
 
-    public boolean isHappy(int n) {
+    // 1. Two Pointers (Floyd's Tortoise and Hare) approach
+    public boolean isHappyApproach1(int n) {
         int slowRunner = n;
         int fastRunner = getNext(n);
 
@@ -51,10 +55,29 @@ public class LeetCode202 {
         return fastRunner == 1;
     }
 
+    // 2. Using HashSet approach:
+    public boolean isHappyApproach2(int n) {
+        Set<Integer> seen = new HashSet<>();
+
+        while (n != 1 && !seen.contains(n)) {
+            seen.add(n);
+            n = getNext(n);
+        }
+
+        return n == 1;
+    }
+
+
     static void main(){
         LeetCode202 leetCode202 = new LeetCode202();
-        System.out.println(leetCode202.isHappy(19));
-        System.out.println(leetCode202.isHappy(2));
-        System.out.println(leetCode202.isHappy(7));
+
+        System.out.println("isHappyApproach - 1 ");
+        System.out.println(leetCode202.isHappyApproach1(19));
+        System.out.println(leetCode202.isHappyApproach1(2));
+
+        System.out.println("isHappyApproach - 2 ");
+        System.out.println(leetCode202.isHappyApproach2(19));
+        System.out.println(leetCode202.isHappyApproach2(2));
+
     }
 }
