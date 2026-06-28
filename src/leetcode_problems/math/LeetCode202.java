@@ -1,6 +1,31 @@
 package leetcode_problems.math;
 
+/*
+    https://leetcode.com/problems/happy-number?envType=problem-list-v2&envId=math
+
+    Complexity Analysis:
+
+    1. Two Pointers (Floyd's Tortoise and Hare):
+            This approach tracks two runners moving at different speeds through the number generation chain to detect cycles without storing past numbers.
+       Time Complexity: O(log n)
+         -> Digit Square Sum Step: For any number x, finding the next number requires isolating each digit.
+                                   The number of digits in x is proportional to log_{10}(x).
+         -> Chain Length: In the worst-case scenario for a number n <= 2^{31} - 1,
+                          the maximum possible value for the next step occurs at 1,999,999,999$,
+                          which yields 1 + (9 * 9^2) = 730. Any value above 730 immediately drops below it within one step.
+                          Once numbers drop into this small finite space (1 to 730),
+                          they either hit 1 or get stuck in a static cycle within very few steps.
+         -> Therefore, the total number of operations is bounded by a constant multiplied by the number of digits in the starting number,
+                          scaling overall as $\mathcal{O}(\log n)$.
+       Space Complexity: O(1)
+         -> Only two pointer variables (slowRunner and fastRunner) are tracked sequentially.
+            No historical data structures are created, making this approach extremely memory efficient.
+
+*/
+
 public class LeetCode202 {
+
+    // Two Pointers (Floyd's Tortoise and Hare) approach
     // Helper function to calculate the sum of squares of digits
     private int getNext(int n) {
         int totalSum = 0;
