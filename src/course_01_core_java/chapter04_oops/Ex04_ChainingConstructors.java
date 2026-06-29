@@ -4,13 +4,13 @@ package course_01_core_java.chapter04_oops;
 class Student{
     private final int studentId;
     private final String studentName;
-    private final int grade;
+    private final String grade;
 
     public Student(){
-        this(0,"Unknown",0);
+        this(0,"Unknown","None");
     }
 
-    public Student(int studentId, String studentName, int grade) {
+    public Student(int studentId, String studentName, String grade) {
         this.studentId = studentId;
         this.studentName = studentName;
         this.grade = grade;
@@ -23,7 +23,7 @@ class Student{
     public String getStudentName() {
         return studentName;
     }
-    public int getGrade() {
+    public String getGrade() {
         return grade;
     }
 }
@@ -36,7 +36,7 @@ public class Ex04_ChainingConstructors {
         System.out.println("Student1 Name: " + student1.getStudentName());
         System.out.println("Student1 Grade: " + student1.getGrade());
 
-        Student student2 = new Student();
+        Student student2 = new Student(1,"Sathya","A");
         // Print the values of the instance variables for student2
         System.out.println("Student2 ID: " + student2.getStudentId());
         System.out.println("Student2 Name: " + student2.getStudentName());
