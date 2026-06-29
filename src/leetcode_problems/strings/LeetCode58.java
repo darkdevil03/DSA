@@ -12,6 +12,13 @@ package leetcode_problems.strings;
         Space Complexity: O(N)
             -> s.trim() creates and returns a new string object in memory. In the worst-case scenario (e.g., no leading/trailing spaces),
                this new string is virtually the same size as the original, requiring extra memory proportional to N.
+
+    Approach 2: Without using String method trim()
+        Time Complexity: O(N)
+            -> In the worst case (e.g., a string full of spaces or containing just one long word), we iterate through the string once from right to left.
+        Space Complexity: O(1) (Constant Space)
+            -> Unlike trim(), this approach uses only a couple of primitive integer variables (i and length).
+               No new strings or memory allocations are created, making it highly efficient.
 */
 
 public class LeetCode58 {
