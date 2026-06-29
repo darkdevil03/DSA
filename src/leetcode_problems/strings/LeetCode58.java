@@ -23,15 +23,9 @@ package leetcode_problems.strings;
 */
 
 public class LeetCode58 {
-    // Approach 1: using trim() method
-    public int lengthOfLastWordApproach1(String s) {
-        // Step 1: Skip trailing spaces
-        String trimmedStr = s.trim();
-
-        int length = trimmedStr.length() - 1;
+    // Helper function : Count characters of the last word (To reduce the repetitive same logic of both approaches)
+    private int getCountLastWordChars(String trimmedStr,int length) {
         int lastWordCharCount = 0;
-
-        // Step 2: Count characters of the last word
         while((length >= 0) && (trimmedStr.charAt(length) != ' ')){
             lastWordCharCount++;
             length--;
@@ -40,9 +34,19 @@ public class LeetCode58 {
         return lastWordCharCount;
     }
 
+    // Approach 1: using trim() method
+    public int lengthOfLastWordApproach1(String s) {
+        // Step 1: Skip trailing spaces
+        String trimmedStr = s.trim();
+
+        int length = trimmedStr.length() - 1;
+
+        // Step 2: Count characters of the last word
+        return getCountLastWordChars(trimmedStr, length);
+    }
+
     // Approach 2: without trim() method
     public int lengthOfLastWordApproach2(String s) {
-        int lastWordCharCount = 0;
         int i = s.length() - 1;
 
         // Step 1: Skip trailing from last spaces
@@ -51,12 +55,7 @@ public class LeetCode58 {
         }
 
         // Step 2: Count characters of the last word
-        while (i >= 0 && s.charAt(i) != ' ') {
-            lastWordCharCount++;
-            i--;
-        }
-
-        return lastWordCharCount;
+        return getCountLastWordChars(s, i);
     }
 
     static void main(){
