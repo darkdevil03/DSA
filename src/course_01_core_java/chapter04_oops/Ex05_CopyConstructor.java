@@ -6,6 +6,15 @@ package course_01_core_java.chapter04_oops;
               Print the values of the variables.
 
     Concept:
+        1. What is a Copy Constructor?
+           A Copy Constructor is a specialized constructor that takes an object of its own class as a parameter.
+           In our code, rec2 is not pointing to the same memory location as rec1.
+           Instead, rec2 is a brand-new object that is an exact clone of rec1 at the moment it was created.
+           This is extremely useful when we want to duplicate an object, perhaps to modify the clone without altering the original data.
+        2. Constructor Chaining (The this() call)When we wrote this(rec.width, rec.height); inside our copy constructor, we executed an advanced Java technique.
+           Instead of rewriting this.length = rec.length;, we forwarded the cloned values directly to our parameterized constructor.
+           This means if we ever want to add validation (like ensuring length is greater than 0),
+           we only have to write that if statement once in the main parameterized constructor!
 
 */
 
