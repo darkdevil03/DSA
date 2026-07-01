@@ -11,33 +11,33 @@ package course_01_core_java.chapter04_oops;
 
 class Rectangle{
     private final double width;
-    private final double height;
+    private final double length;
 
-    public Rectangle(double width, double height){
+    public Rectangle(double width, double length){
         this.width = width;
-        this.height = height;
+        this.length = length;
     }
 
     public Rectangle(Rectangle rec){
-        this(rec.width, rec.height);
+        this(rec.width, rec.length);
     }
 
     public double getWidth(){
         return width;
     }
-    public double getHeight(){
-        return height;
+    public double getLength(){
+        return length;
     }
 }
 
 public class Ex05_CopyConstructor {
     static void main() {
         Rectangle rec1 = new Rectangle(10,20);
-        System.out.println("Rectangle-1 Length: " +rec1.getWidth());
-        System.out.println("Rectangle-1 Width: " + rec1.getHeight());
+        System.out.println("Rectangle-1 Width: " +rec1.getWidth());
+        System.out.println("Rectangle-1 Length: " + rec1.getLength());
 
         Rectangle rec2 = new Rectangle(rec1);
-        System.out.println("Rectangle-2 Length: " +rec2.getWidth());
-        System.out.println("Rectangle-2 Width: " + rec2.getHeight());
+        System.out.println("Rectangle-2 Width: " +rec2.getWidth());
+        System.out.println("Rectangle-2 Length: " + rec2.getLength());
     }
 }
