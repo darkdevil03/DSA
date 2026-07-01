@@ -7,6 +7,10 @@ package course_01_core_java.chapter04_oops;
                Print the values of the variables.
 
     Concepts:
+        Constructor Chaining: Professional Java developers use Constructor Chaining to write cleaner, more maintainable code.
+               By using the this() method inside your default constructor, you called another constructor within the same class.
+               This centralizes all your variable assignments into a single constructor.
+
 */
 
 class Student{
