@@ -19,21 +19,27 @@ package course_01_core_java.chapter04_oops;
 */
 
 class Rectangle{
+    // 1. Instance variables exactly as requested
     private final double width;
     private final double length;
 
+    // 2. Parameterized Constructor
     public Rectangle(double width, double length){
         this.width = width;
         this.length = length;
     }
 
+    // 3. Copy Constructor (Using Chaining)
     public Rectangle(Rectangle rec){
+        // Passes the existing object's values to the parameterized constructor
         this(rec.width, rec.length);
     }
 
+    // 4. Getters
     public double getWidth(){
         return width;
     }
+
     public double getLength(){
         return length;
     }
@@ -41,10 +47,13 @@ class Rectangle{
 
 public class Ex05_CopyConstructor {
     static void main() {
+        System.out.println("--- Original Rectangle ---");
         Rectangle rec1 = new Rectangle(10,20);
         System.out.println("Rectangle-1 Width: " +rec1.getWidth());
         System.out.println("Rectangle-1 Length: " + rec1.getLength());
 
+        System.out.println("\n--- Cloned Rectangle ---");
+        // Passing rec1 into rec2's constructor to create a copy
         Rectangle rec2 = new Rectangle(rec1);
         System.out.println("Rectangle-2 Width: " +rec2.getWidth());
         System.out.println("Rectangle-2 Length: " + rec2.getLength());
