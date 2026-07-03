@@ -7,6 +7,26 @@ package course_01_core_java.chapter04_oops;
               ->  One constructor takes int parameters.
               ->  Another constructor takes double parameters.
               ->  Print the values of the variables for each constructor.
+    Concepts:
+        1. Constructor Overloading (Compile-Time Polymorphism)
+            This is a form of Compile-time Polymorphism. It is achieved when multiple methods (or constructors) have the same name but different parameters.
+            When you type new Point(1, 2) versus new Point(3.09, 4.09), the Java compiler looks at the data types of the arguments you provided.
+            The method call is resolved at compile time. It automatically maps our request to the correct constructor based on whether we passed integers or decimal numbers.
+        2. Implicit Type Casting (Widening Conversion)
+            we might wonder how this(x, y); works inside the integer constructor when it is calling a constructor that demands double parameters.
+            In Java, an int takes up 32 bits of memory, while a double takes up 64 bits.
+            Because an int is smaller, Java can safely and automatically convert an int into a double without losing any data.
+            This is called a "Widening Conversion" or "Implicit Casting."
+            The integer 1 automatically becomes the decimal 1.0.
+        3. Encapsulation
+            our decision to use private variables was spot on. Encapsulation is the process of wrapping data and methods into a single unit,
+            usually a class, and restricting direct access to the data.
+            It acts as a protective shield that prevents data from being accessed directly from outside the class.
+            Access to data is then safely provided through public getter methods.
+        4. Parameterized Constructor
+            By writing constructors that accept values, we are utilizing Parameterized Constructors.
+            A constructor that accepts parameters is used to initialize an object with specific values.
+            This ensures that every Point object created in our application has valid x and y coordinates from the very exact moment it is brought into existence.
 */
 
 class Point {
