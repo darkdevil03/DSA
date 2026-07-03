@@ -1,5 +1,10 @@
 package course_01_core_java.chapter04_oops;
 
+/*
+    Question: Write a Java program to create a class called Car with instance variables make, model, and year.
+              Implement a parameterized constructor that initializes these variables and assigns default values if not provided.
+              Print the values of the variables.
+*/
 
 class Car {
     // 1. Excellent Encapsulation and Immutability
@@ -45,7 +50,7 @@ class Car {
 }
 
 public class Ex07_ConstructorWithDefaultValues {
-    static void main(String[] args) {
+    static void main() {
         System.out.println("--- Test 1: All Valid Inputs ---");
         Car car1 = new Car("TATA", "Nexon", 2022);
         System.out.println(car1);
