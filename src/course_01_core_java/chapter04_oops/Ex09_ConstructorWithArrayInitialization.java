@@ -1,5 +1,9 @@
 package course_01_core_java.chapter04_oops;
-
+/*
+    Question: Write a Java program to create a class called Classroom with instance variables className and students (an array of strings).
+              Implement a parameterized constructor that initializes these variables.
+              Print the values of the variables.
+ */
 import java.util.Arrays;
 
 class Classroom{
