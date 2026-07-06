@@ -1,13 +1,21 @@
 package course_01_core_java.chapter04_oops;
 
+/*
+    Question: Write a Java program to create a class called Singleton that ensures only one instance of the class can be created.
+              Implement a private constructor and a public static method to get the single instance of the class.
+              Print a message indicating the creation of the instance.
+*/
+
 class SingletonClass {
     // Private static variable to hold the single instance
-    private static SingletonClass singletonClass = null;
+    private static SingletonClass singletonClass;
+    private final String status; // To avoid specific warning—"Instantiation of utility class"
 
     // Private constructor to prevent instantiation
     private SingletonClass(){
         // Print a message indicating the creation of the instance
-        System.out.println("\n--- Singleton instance created ---");
+        this.status = "active";
+        System.out.println("Singleton instance created and "+getStatus()+"...!");
     }
 
     // Public static method to get the single instance of the class
@@ -17,6 +25,11 @@ class SingletonClass {
             singletonClass = new SingletonClass();
         }
         return singletonClass;
+    }
+
+    // ADDED A STANDARD METHOD
+    public String getStatus(){
+        return this.status;
     }
 }
 
