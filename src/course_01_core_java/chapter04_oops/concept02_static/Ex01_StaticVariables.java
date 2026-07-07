@@ -1,4 +1,4 @@
-package course_01_core_java.chapter04_oops.static_concept;
+package course_01_core_java.chapter04_oops.concept02_static;
 
 /*
     Question: Write a Java program to create a class called "Counter" with a static variable count.
