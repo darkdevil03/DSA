@@ -48,7 +48,7 @@ class StudentStaticAndInstance {
         A Static Method is an action performed by the Class blueprint itself. It does not belong to any specific object.
         Imagine an announcement coming over the school Intercom System. The intercom is just a speaker attached to the building (the Class blueprint).
         The intercom can easily announce what is written on the Whiteboard (Static variables) because the whiteboard belongs to the building.
-        The Error: What happens if the intercom says, "Please read what is written on page 2 of your Notebook"?
+        The Error: What happens if the intercom says, "Please read what is written on page 2 of wer Notebook"?
         The intercom doesn't know if there are 100 students in the room, 5 students, or zero students. The intercom doesn't have a notebook of its own.
         In Java, if a static method tries to access an instance variable,
         the compiler panics and throws an error because it has no physical object to pull that data from.
@@ -73,7 +73,7 @@ class StudentStaticMethods {
 
         // CRITICAL ERROR: The static method CANNOT see instance variables
         // System.out.println("Welcome, " + this.studentName);
-        // ^^^ If you uncomment the line above, Java will throw:
+        // If we uncomment the line above, Java will throw:
         // "Non-static variable cannot be referenced from a static context."
     }
 }
