@@ -1,4 +1,4 @@
-package course_01_core_java.chapter04_oops.constructor;
+package course_01_core_java.chapter04_oops.concept01_constructor;
 /*
     Question: Write a Java program to create a class called Classroom with instance variables className and students (an array of strings).
               Implement a parameterized constructor that initializes these variables.
