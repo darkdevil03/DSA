@@ -1,4 +1,4 @@
-package course_01_core_java.chapter04_oops;
+package course_01_core_java.chapter04_oops.constructor;
 
 /*
     Question : Write a Java program to create a class called "Cat" with instance variables name and age.
