@@ -12,7 +12,7 @@ package course_01_core_java.chapter04_oops.concept02_static;
           -> It is typically used when setting up a static variable requires complex logic, like connecting to a database, reading a file, or doing math calculations, which cannot be easily done in a single line.
 
         2. The Execution Order (The Magic of the ClassLoader)
-          -> If you look closely at the console output when you run your program, you will notice something fascinating:
+          -> If we look closely at the console output when we run out program, we will notice something fascinating:
 
           Console Output:
           --- Starting Program ---
@@ -20,31 +20,31 @@ package course_01_core_java.chapter04_oops.concept02_static;
           Before creating object: 1000
           After creating object: 1000
 
-          -> Notice that your static block printed its message BEFORE your main method printed "Before creating object".
+          -> Notice that out static block printed its message BEFORE out main method printed "Before creating object".
           How is this possible?
-          -> In Java, the moment you mention a class for the very first time (like writing Initializer.getInitialValue()),
+          -> In Java, the moment we mention a class for the very first time (like writing Initializer.getInitialValue()),
              the Java Virtual Machine (JVM) loads that Class blueprint into memory.
              The absolute very first thing the JVM does during this loading phase is run the Static Block.
           -> It runs exactly one time, and it runs before any objects are created and before any static methods are called.
 
         3. Why the value stays the same
-           When you wrote new Initializer(), you created an object.
+           When we wrote new Initializer(), we created an object.
            But because the static block already ran when the class was first loaded into memory, it does not run again.
            The static variable belongs to the Class Whiteboard, so it remains safely at 1000 for the rest of the program's life,
-           no matter how many objects you create!
+           no matter how many objects we create!
 
     For Warnings resolving:
        1. Field 'initialValue' may be 'final':
             Why it happened:
-                IntelliJ noticed that you assigned a value to initialValue inside the static block and
+                IntelliJ noticed that we assigned a value to initialValue inside the static block and
                 never changed it again anywhere else in the code.
             The Fix:
                 We added the final keyword (private static final int initialValue;).
-                This officially locks the variable, making your code safer and more memory-efficient!
+                This officially locks the variable, making out code safer and more memory-efficient!
        2. Variable 'initializer1' is never used:
             Why it happened:
-                You created the object Initializer initializer1 = new Initializer();,
-                but you never actually called any methods on initializer1 afterward.
+                we created the object Initializer initializer1 = new Initializer();,
+                but we never actually called any methods on initializer1 afterward.
             The Fix:
                 Since the exercise just asked us to create an instance to prove the static value doesn't change
                 (we didn't actually need to use the object for anything), we can just write new Initializer();
@@ -52,10 +52,10 @@ package course_01_core_java.chapter04_oops.concept02_static;
         3. Instantiation of utility class 'Initializer':
             Why it happened:
                 As we learned in a previous exercise, a "Utility Class" is a class that only has static members (like Java's Math class).
-                Because your Initializer class only has a static variable, a static block, and a static method,
-                IntelliJ assumes it is a Utility Class and is warning you that you shouldn't be using new Initializer().
+                Because out Initializer class only has a static variable, a static block, and a static method,
+                IntelliJ assumes it is a Utility Class and is warning we that we shouldn't be using new Initializer().
             The Fix:
-                Since the exercise explicitly requires you to instantiate it,
+                Since the exercise explicitly requires we to instantiate it,
                 we just tell IntelliJ to ignore its own rule here by adding the @SuppressWarnings("InstantiationOfUtilityClass")
                 annotation right above the main method.
 
