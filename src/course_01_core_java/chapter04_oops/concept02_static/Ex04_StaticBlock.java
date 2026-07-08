@@ -34,7 +34,30 @@ package course_01_core_java.chapter04_oops.concept02_static;
            no matter how many objects you create!
 
     For Warnings resolving:
-
+       1. Field 'initialValue' may be 'final':
+            Why it happened:
+                IntelliJ noticed that you assigned a value to initialValue inside the static block and
+                never changed it again anywhere else in the code.
+            The Fix:
+                We added the final keyword (private static final int initialValue;).
+                This officially locks the variable, making your code safer and more memory-efficient!
+       2. Variable 'initializer1' is never used:
+            Why it happened:
+                You created the object Initializer initializer1 = new Initializer();,
+                but you never actually called any methods on initializer1 afterward.
+            The Fix:
+                Since the exercise just asked us to create an instance to prove the static value doesn't change
+                (we didn't actually need to use the object for anything), we can just write new Initializer();
+                without saving it to a variable. This is called an "anonymous object" and it perfectly clears the warning.
+        3. Instantiation of utility class 'Initializer':
+            Why it happened:
+                As we learned in a previous exercise, a "Utility Class" is a class that only has static members (like Java's Math class).
+                Because your Initializer class only has a static variable, a static block, and a static method,
+                IntelliJ assumes it is a Utility Class and is warning you that you shouldn't be using new Initializer().
+            The Fix:
+                Since the exercise explicitly requires you to instantiate it,
+                we just tell IntelliJ to ignore its own rule here by adding the @SuppressWarnings("InstantiationOfUtilityClass")
+                annotation right above the main method.
 
 */
 
