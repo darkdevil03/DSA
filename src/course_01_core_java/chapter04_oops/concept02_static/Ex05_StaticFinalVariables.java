@@ -1,6 +1,10 @@
 package course_01_core_java.chapter04_oops.concept02_static;
 
-
+/*
+    Write a Java program to create a class called Constants with a static final variable 'PI' initialized to 3.14159.
+    Create a method to calculate the area of a circle given its radius, using the 'PI' constant.
+    Demonstrate the method in the main method.
+*/
 
 class Constants{
 
