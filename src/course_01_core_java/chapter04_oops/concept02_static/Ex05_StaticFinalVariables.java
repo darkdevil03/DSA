@@ -6,18 +6,30 @@ package course_01_core_java.chapter04_oops.concept02_static;
     Demonstrate the method in the main method.
 */
 
-class Constants{
+class Constants {
 
-    private static final double PI = 3.14159;
+    // 1. Standard Constant Declaration (public, static, and final)
+    // Naming convention: Constants are always ALL_CAPS
+    public static final double PI = 3.14159;
 
-    public double area(double radius){
-        return PI * radius * radius;
+    // 2. Private constructor to prevent object instantiation
+    private Constants() {
+        throw new UnsupportedOperationException("Utility class cannot be instantiated");
     }
 
+    // 3. Static method (No object required to call this)
+    public static double calculateArea(double radius) {
+        return PI * radius * radius;
+    }
 }
+
 public class Ex05_StaticFinalVariables {
+
     static void main() {
-       Constants cons = new Constants();
-       System.out.println("Area of circle with radius : " +cons.area(2.212));
+        double radius = 2.212;
+
+        // 4. Accessing both the constant and the method directly via the Class Name
+        System.out.println("Using Constant PI: " + Constants.PI);
+        System.out.println("Area of circle with radius " + radius + " is: " + Constants.calculateArea(radius));
     }
 }
