@@ -46,10 +46,8 @@ class Constants {
 }
 
 public class Ex05_StaticFinalVariables {
-
     static void main() {
         double radius = 2.212;
-
         // 4. Accessing both the constant and the method directly via the Class Name
         System.out.println("Using Constant PI: " + Constants.PI);
         System.out.println("Area of circle with radius " + radius + " is: " + Constants.calculateArea(radius));
