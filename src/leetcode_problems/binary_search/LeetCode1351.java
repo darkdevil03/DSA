@@ -1,9 +1,10 @@
 package leetcode_problems.binary_search;
 
 /*
-    https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix?envType=study-plan-v2&envId=binary-search
+Daily Question
+    LeetCode1351 : https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix?envType=study-plan-v2&envId=binary-search
 
-    Approches:
+    Approaches:
     1: Use Binary Search if only the rows are sorted.
        If the columns are random, the staircase method will fail,
        but binary search will still work perfectly.

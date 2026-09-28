@@ -1,6 +1,7 @@
 package leetcode_problems.binary_search;
 /*
-    Leetcode 704: https://leetcode.com/problems/binary-search?envType=study-plan-v2&envId=binary-search
+Daily Question
+    LeetCode704 : https://leetcode.com/problems/binary-search?envType=study-plan-v2&envId=binary-search
 */
 
 public class LeetCode704 {

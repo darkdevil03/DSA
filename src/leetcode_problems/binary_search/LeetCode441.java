@@ -1,7 +1,8 @@
 package leetcode_problems.binary_search;
 
 /*
-    https://leetcode.com/problems/arranging-coins?envType=study-plan-v2&envId=binary-search
+Daily Question
+    LeetCode441 :  https://leetcode.com/problems/arranging-coins?envType=study-plan-v2&envId=binary-search
 
     Explanation:
 
