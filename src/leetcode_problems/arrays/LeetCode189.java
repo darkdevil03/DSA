@@ -1,8 +1,8 @@
 package leetcode_problems.arrays;
 
 /*
-    Link:
-         https://leetcode.com/problems/rotate-array
+Daily Question
+    LeetCode189 : https://leetcode.com/problems/rotate-array
 */
 
 import java.util.Arrays;

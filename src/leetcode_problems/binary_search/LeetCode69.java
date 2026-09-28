@@ -1,7 +1,8 @@
 package leetcode_problems.binary_search;
 
 /*
-    https://leetcode.com/problems/sqrtx?envType=study-plan-v2&envId=binary-search
+Daily Question
+    LeetCode69 : https://leetcode.com/problems/sqrtx?envType=study-plan-v2&envId=binary-search
 */
 
 public class LeetCode69 {

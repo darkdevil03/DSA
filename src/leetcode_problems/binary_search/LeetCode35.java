@@ -1,7 +1,8 @@
 package leetcode_problems.binary_search;
 
 /*
-  LeetCode 35:  https://leetcode.com/problems/search-insert-position?envType=study-plan-v2&envId=binary-search
+  Daily Question
+    LeetCode 35:  https://leetcode.com/problems/search-insert-position?envType=study-plan-v2&envId=binary-search
  */
 
 
