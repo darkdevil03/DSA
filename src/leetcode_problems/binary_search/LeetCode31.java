@@ -1,7 +1,8 @@
 package leetcode_problems.binary_search;
 
 /*
-    https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array?envType=study-plan-v2&envId=binary-search
+Daily Question
+    LeetCode31 :  https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array?envType=study-plan-v2&envId=binary-search
 
 As per leetcode complier and given Constraints: both run in 0ms
 

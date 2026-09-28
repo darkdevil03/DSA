@@ -1,7 +1,8 @@
 package leetcode_problems.binary_search;
 
 /*
-    https://leetcode.com/problems/find-minimum-in-rotated-sorted-array?envType=daily-question&envId=2026-05-15
+Daily Question
+    LeetCode153 : https://leetcode.com/problems/find-minimum-in-rotated-sorted-array?envType=daily-question&envId=2026-05-15
 */
 
 public class LeetCode153 {
