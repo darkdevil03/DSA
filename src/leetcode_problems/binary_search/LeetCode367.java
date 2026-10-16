@@ -31,6 +31,7 @@ public class LeetCode367 {
     }
 
     static void main() {
+
         int num = 16;
 
         LeetCode367 leetCode367 = new LeetCode367();
