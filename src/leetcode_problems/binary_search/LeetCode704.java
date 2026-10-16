@@ -5,7 +5,6 @@ Daily Question
 */
 
 public class LeetCode704 {
-
     // Solution method
     public int search(int[] nums, int target) {
 
@@ -27,11 +26,11 @@ public class LeetCode704 {
         }
 
         return -1;
-
     }
 
     // main for input checks
     static void main() {
+
         int[] nums = {-1,0,3,5,9,12};
         int target = 9;
 
