@@ -5,7 +5,6 @@ package leetcode_problems.binary_search;
     LeetCode 35:  https://leetcode.com/problems/search-insert-position?envType=study-plan-v2&envId=binary-search
  */
 
-
 public class LeetCode35 {
 
     // Solution LeetCode 35
